@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Search engine meta tags !-->
+    <meta name="description" content="Rock, paper, scissors, lizard, Spock game" />
+    <meta name="keywords" content="Rock, paper, scissors, lizard, spoke, game, javascript game, online game" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../Project2/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../Project2/assets/favicon/favicon180x180.png" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../Project2/assets/favicon/favicon32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../Project2/assets/favicon/favicon16x16.png" />
+
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- CSS Style list link-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <title>"Rock, Paper, Scissors, Lizard, Spock" game</title>
+</head>
+
+<body>
+    <h1 class="heading"><img class="logo" src="../assets/favicon/favicon64x64.png" alt="logo"><br>Rock, Paper, Scissors,
+        Lizard, Spock</h1>
+    <div class="main-div">
+        <button type="button" id="open-rules-btn" class="rules-btn" aria-label="Check the game rules">
+            <i class="fa-solid fa-scroll"></i>Rules</button>
+
+        <div id="rules-container">
+            <div id="rules">
+                <h1>How to play</h1>
+
+                <p class="rules-text">
+                    Rock crushes lizard or crushes scissors.<br />
+                    Paper covers rock or disproves Spock.<br />
+                    Scissors cuts paper or decapitates lizard.<br />
+                    Lizard poisons Spock or eats paper.<br />
+                    Spock smashes scissors or vaporizes rock.</br></p>
+
+                <p class="get5scores">Get 5 scores before computer does!</p>
+
+                <button id="close">Ready to start</button>
+            </div>
+        </div>
+
+        <!-- GAME CONTENT-->
+
+        <main class="game-area">
+            <h2>Game Arena</h2>
+
+            <section class="current-game">
+
+                <div class="game-arena">
+                    <span id="computer" class="default"><i class="fa-solid fa-hand-fist"></i></span>
+                    <span class="default">VS</span>
+                    <span id="player" class="default"><i class="fa-solid fa-hand-fist"></i></span>
+                </div>
+
+            </section>
+
+            <!-- Hidden Icons-->
+            <section class="hidden">
+                <!--Computer's hands-->
+                <span id="computer-hand" class="default rock"><i class="fa-solid fa-hand-fist fa-rotate-90"></i></span>
+                <span id="computer-hand" class="default scissors"><i
+                        class="fa-solid fa-hand-scissors fa-flip-horizontal"></i></span>
+                <span id="computer-hand" class="default paper"><i class="fa-solid fa-hand fa-rotate-90"></i></span>
+                <span id="computer-hand" class="default lizard"><i
+                        class="fa-solid fa-hand-lizard fa-flip-horizontal"></i></span>
+                <span id="computer-hand" class="default spock"><i
+                        class="fa-solid fa-hand-spock fa-rotate-90"></i></span>
+                <!--Player's hands-->
+                <span id="player-hand" class="default rock"><i class="fa-solid fa-hand-fist fa-rotate-270"></i></span>
+                <span id="player-hand" class="default scissors"><i class="fa-solid fa-hand-scissors"></i></span>
+                <span id="player-hand" class="default paper"><i class="fa-solid fa-hand fa-rotate-270"></i></span>
+                <span id="player-hand" class="default lizard"><i class="fa-solid fa-hand-lizard"></i></span>
+                <span id="player-hand" class="default spock"><i class="fa-solid fa-hand-spock fa-rotate-270"></i></span>
+            </section>
+
+
+            <!-- Hand choice-->
+            <section class="options">
+                <button class="choiceBtn"><i class="fa-solid fa-hand-fist"></i></button>
+                <button class="choiceBtn"><i class="fa-solid fa-hand-scissors"></i></button>
+                <button class="choiceBtn"><i class="fa-solid fa-hand"></i></button>
+                <button class="choiceBtn"><i class="fa-solid fa-hand-lizard"></i></button>
+                <button class="choiceBtn"><i class="fa-solid fa-hand-spock"></i></button>
+            </section>
+
+
+
+
+            <div id="scores-area">
+                <p class="gameScores" id="computerScores">Computer's Scores:<span id="loser">0</span></p>
+                <p class="gameScores" id="playerScores">Player's Scores:<span id="winner">0</span></p>
+                <p class="gameScores" id="resultScores">Game Result:<span id="result">Draw</span></p>
+
+            </div>
+
+        </main>
+
+
+
+
+
+
+
+
+        <!-- Font Awesome Link -->
+        <script src="https://kit.fontawesome.com/d423496652.js" crossorigin="anonymous"></script>
+
+        <!-- Javascript  Link-->
+        <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

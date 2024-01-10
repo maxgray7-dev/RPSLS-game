@@ -1,0 +1,182 @@
+/* Google Font - Oswald, Fira Sans, by default sans-serif */
+/* Colors to use: 
+    #FFDAD8-pink, 
+    #D3DDEA -easy-blue, 
+    #F2F7F9 - white, 
+    #CDECEF - sky blue, 
+    #2B91AD - deep blue */
+
+
+/* General settings */
+body {
+    background: #2B91AD;
+    font-family: "Oswald", "Fira Sans", sans-serif;
+    color: #F2F7F9;
+    text-align: center;
+    border: 3px solid #CDECEF;
+}
+
+/* Heading */
+
+#logo {
+    height: 20px;
+    align-items: center;
+}
+
+/* Rules Button  */
+button {
+    display: block;
+    margin: auto;
+    width: 10rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+/* Rules container*/
+#rules-container {
+    box-sizing: border-box;
+    display: none;
+    color: #F2F7F9;
+}
+
+#rules {
+    position: fixed;
+    z-index: 1;
+    padding-bottom: 10px;
+    /* Location of the box */
+    top: 50%;
+    bottom: 50%;
+    margin: auto;
+    left: 25px;
+    right: 25px;
+    /*Max width and height */
+    width: 50%;
+    height: 50%;
+    letter-spacing: 1.5px;
+    overflow: auto;
+    background-color: #2B91AD;
+}
+
+.get5scores {
+    color: rgb(20, 239, 231);
+
+}
+
+/* "Close" button */
+#close {
+    background-color: #CDECEF;
+    color: #2B91AD;
+    border: 3px solid #D3DDEA;
+    margin: 1rem;
+    margin-top: 50px;
+    margin-left: 40%;
+    font-size: 0.9rem;
+    margin-bottom: 10%;
+    border-radius: 0.5rem;
+
+
+}
+
+/*  SETTINGS FOR HANDS */
+
+/*Game Zone*/
+
+h2 {
+
+    color: black;
+    letter-spacing: 1.5px;
+    font-size: 35px;
+}
+
+.game-area {
+    background-color: #FFDAD8;
+    box-sizing: border-box;
+    width: 85%;
+    height: 75vh;
+    max-height: 600px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20%;
+    padding-top: 2%;
+    padding-bottom: 20%;
+    margin-bottom: 20px;
+
+}
+
+.game-arena {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    margin: 0.5rem 1rem;
+    border-right: 1rem;
+    color: gray;
+    font-size: 10px;
+
+
+}
+
+.hidden {
+    display: none;
+}
+
+/*Game Zone - Computer VS Player* - settings*/
+
+.default {
+    font-size: 6rem;
+}
+
+#computer {
+    color: #2B91AD;
+}
+
+
+#player {
+    color: #21d15c;
+}
+
+.game-area span {
+    padding: 0 10px;
+
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.choiceBtn {
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 10%;
+    width: 3rem;
+    height: 3rem;
+    padding-top: 5px;
+    bottom: 10%;
+
+
+}
+
+/*Games Scores*/
+.gameScores {
+    display: flex;
+    font-size: 12px;
+}
+
+#computerScores {
+    color: #2B91AD;
+    font-size: 15px;
+}
+
+#playerScores {
+    color: #21d15c;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#resultScores {
+    color: #2116c8;
+    font-weight: bold;
+}
