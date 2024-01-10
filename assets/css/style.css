@@ -160,8 +160,10 @@ h2 {
 }
 
 /*Games Scores*/
-.gameScores {
+#scores-area {
     display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
     font-size: 12px;
 }
 
