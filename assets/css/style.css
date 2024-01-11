@@ -133,6 +133,9 @@ h2 {
 .default {
     font-size: 6rem;
 }
+.default-vs {
+    font-size: 6rem;
+}
 
 #computer {
     color: #2B91AD;
@@ -374,6 +377,7 @@ h2 {
 
 @media screen and (min-width: 1024px) {
 
+
     .game-arena span {
             font-size: 125x;
             padding: 0 2rem;
@@ -410,6 +414,7 @@ h2 {
             border-radius: 15%;
             width: 4rem;
             height: 4rem;
+            background-color:#CDECEF;
         }
 
     /*options area*/
