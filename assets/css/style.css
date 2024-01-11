@@ -164,7 +164,7 @@ h2 {
     justify-items: center;;
     font-size: 2rem;
     margin-left:10px;
-    border-radius: 10%;
+    border-radius: 15%;
     width: 3rem;
     height: 3rem;
     padding-top: 5px;
@@ -226,7 +226,7 @@ h2 {
 
     .options {
         position: static;
-        margin-top: 64%;
+        margin-top: 90%;
         margin-left: -3rem;
     }
 
@@ -235,7 +235,7 @@ h2 {
         position: block;
         font-size: 15px;
         color: gray;
-        bottom: 5%;
+        bottom: 0%;
         left: 25%;
     }
 
@@ -243,6 +243,7 @@ h2 {
         font-size: 20px;
         padding: 3px;
         margin: 29px 5px;
+        border-radius: 50%;
 
     }
 
@@ -267,6 +268,21 @@ h2 {
     }
 
 }
+@media screen and (min-width: 390px) {
+   .options {
+    margin-left:0;
+    margin-top:100%;
+   } 
+
+   .options h2 {
+    bottom: 12%;
+    left: 35%;
+   }
+
+
+}
+
+
 
 @media screen and (min-width: 540px) {
     .gameScores {
@@ -285,46 +301,126 @@ h2 {
 
 @media screen and (min-width: 768px) {
 
-    .options {
-        height: 70px;
-        position: static;
-        margin-top: 40%;
+    /*Heading*/
+    body h1 {
+        font-size:35px;
     }
 
+
+    main h2 {
+        font-size: 40px;
+    }
+        /*GAME ARENA - HANDS SETTINGS*/
+    .game-arena span {
+        font-size: 85px;
+        padding: 0 2rem;
+    }
+
+
+    /*Scores Computer and Player - location on the page*/
     #scores-area div {
-        margin-top: -15rem;
+        margin-top: -22rem;
         padding: 0 5rem;
     }
 
+        /*Computer and Player Scores - font-size*/
+    #scores-area p {
+        font-size:21px;  
+    }
+    /* TEXT - "Chose your Hand"*/ 
     .options>h2 {
         align-items: center;
         position: absolute;
         font-size: 15px;
-        bottom: 35%;
+        bottom: 25%;
         left: 40%;
+        margin-bottom:-1rem;
     }
 
-    #current-game-result {
-        margin-top: -10rem;
+        /* Settings inside Choice Buttons*/
+    .options {
+        font-size: 34px;
+        margin:1px 8px;
     }
+
+
+    #current-game-result {
+        margin-top: -23em;
+
+    }
+
+    #current-game-result p {
+        font-size: 30px;
+    }
+
+    .choiceBtn {
+    margin: 12rem 5px;
+    justify-items: center;
+    width:3rem;
+    height:3rem;        
+    border-radius: 15%;
+    width: 3rem;
+    height: 2rem;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
+
+    .game-arena span {
+            font-size: 125x;
+            padding: 0 2rem;
+        }
+
+    #scores-area div {
+        margin-top: -20rem;
+        padding: 0 5rem;
+        }
+            
+        /*Computer and Player Scores - font-size*/
+        #scores-area p {
+            font-size: 25px;
+        }
+            
+        /* TEXT - "Chose your Hand"*/
+    .options>h2 {
+        align-items: center;
+        position: absolute;
+        font-size: 15px;
+        bottom: 36%;
+        left: 30%;
+        margin:0;
+    }
+
+            
+        #current-game-result {
+            margin-top: -23em;   
+        }
+            
+        .choiceBtn {
+            margin: 12rem 5px;
+            justify-items: center;
+            border-radius: 15%;
+            width: 3rem;
+            height: 3rem;
+        }
+            
+                         
+
+
+
 
     /*options area*/
    .options {
         display: flex;
         position: relative; 
-        top: 54%;
+        top: -10%;
         left:5%;
         justify-content: center;
         
    }
 
-   #scores-area  div {
-    margin-top: -6rem;
-    padding: 0 6rem;
-   }
+  
 }
 
 
