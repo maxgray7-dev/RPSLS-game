@@ -1,11 +1,14 @@
 # Rock, Paper, Scissors, Lizard, Spock Project
-Developer: Maksim Popov
-![Rock, Paper, Scissors, Lizard, Spock](https://maxgray7-dev.github.io/RPSLS-game/)
+Developer: Maksim Popov;
+
+[GAME Link](https://maxgray7-dev.github.io/RPSLS-game/)
+
+![Site preview](https://i.ibb.co/QdC5ZGL/MainPage.png)
 
 ## Description
 
 The Rock, Paper, Scissors, Lizard, Spock game project has a purpose to entertain people. They can visit the site where they can take a break and play a short game with computer. This game often used by people to help them to take a decision about something. Analogue of game "heads and tales".
-![Rock, Paper, Scissors, Lizard, Spock](https://ibb.co/tsq3bNp)
+[Rock, Paper, Scissors, Lizard, Spock](https://ibb.co/tsq3bNp)
 
 ## Table of Contents
   
@@ -124,17 +127,13 @@ All changes pushed to the main branch will be reflected on the site.
 
 ## Credits
 
-The Project has been designed by maksim Popov.
-There are pictures that were taken from sources listed below:
-Picture Sources:
+The Project has been designed by Maksim Popov.
+There are icons that were taken from source listed below. In addition to that I used sources to learn more about javaScript:
 
-- About us [source](https://www.skiworld.co.uk/blog/useful-tips-for-booking-your-family-ski-holiday/)
-- Services [source](https://www.ifyouski.com/ski-resorts/france/tignes)
-- Gallery picture came from several sources [source 1](https://www.ifyouski.com/ski-resorts/france/tignes)
-- [source 2](https://skivertigo.co.uk/tignes/#image-gallery-3)
-- [source 3](https://www.crystalski.co.uk/ski-resorts/france-ski-holidays/tignes/)
-- Become a member [source](https://www.cgh-residences.co.uk/photos/domaines/sliders/espace-killy-1_66.webp)
-- Footer [source](https://skivertigo.co.uk/tignes/#image-gallery-7)
+
+- Hand Icons [source](https://fontawesome.com/)
+  
+  
 
 # Code
 
