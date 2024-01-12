@@ -284,6 +284,7 @@ h2 {
     height:65px;
     justify-content:center;
     margin-left:12px;
+    margin-top:13rem;
    } 
 
    .options h2 {
@@ -300,6 +301,11 @@ h2 {
    #scores-area div {
     margin-top: -12rem;
    }
+
+    #current-game-result {
+    margin-top: -10rem;
+    }
+
 
 }
 
@@ -427,24 +433,24 @@ h2 {
     }
 
             
-        #current-game-result {
-            margin-top: -23em;   
-        }
+    #current-game-result {
+            margin-top: -17em;   
+    }
             
-        .choiceBtn {
-            margin: 12rem 5px;
-            justify-items: center;
-            border-radius: 15%;
-            width: 4rem;
-            height: 4rem;
-            background-color:#CDECEF;
-        }
+    .choiceBtn {
+        margin: 12rem 5px;
+        justify-items: center;
+        border-radius: 15%;
+        width: 4rem;
+        height: 4rem;
+        background-color:#CDECEF;
+    }
 
     /*options area*/
    .options {
         display: flex;
         position: relative; 
-        top: -10%;
+        top: 4%;
         left:5%;
         justify-content: center;
         
