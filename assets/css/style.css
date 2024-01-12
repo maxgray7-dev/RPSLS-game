@@ -420,6 +420,8 @@ h2 {
         /*Computer and Player Scores - font-size*/
         #scores-area p {
             font-size: 25px;
+            margin-top: 5rem;
+
         }
             
         /* TEXT - "Chose your Hand"*/

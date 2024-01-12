@@ -33,14 +33,6 @@ let playerChoiceOptions = {
     "fa-solid fa-hand-lizard": "lizard",
     "fa-solid fa-hand-spock fa-rotate-270": "spock",
     };
-//Rules Button
-openRules.onclick = function () {
-    rules.style.display = "block";
-};
-close.onclick = function () {
-    rules.style.display = "none";
-};
-
 
 let computer;
 let player;
@@ -53,19 +45,19 @@ choiceButtons.forEach(button => button.addEventListener ("click", () => {
 
     switch(player) {
         case 1:
-            rockButton = "rock";
+            playerChoiceOptions[0] = "rock";
             break;
         case 2:
-            scissorsButton = "scissors";
+            playerChoiceOptions[1] = "scissors";
             break;
         case 3:
-            paperButton ="paper";
+            playerChoiceOptions[2] ="paper";
             break;
         case 4:
-            lizardButton ="lizard";
+            playerChoiceOptions[3] ="lizard";
             break;
         case 5:
-            spockButton ="spoke";
+            playerChoiceOptions[4] ="spoke";
             break;
     }
 
@@ -94,5 +86,13 @@ function computerRandomChoice() {
 
 
 
+
+//Rules Button
+openRules.onclick = function () {
+    rules.style.display = "block";
+};
+close.onclick = function () {
+    rules.style.display = "none";
+};
 
 
