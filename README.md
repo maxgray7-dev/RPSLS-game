@@ -1,11 +1,11 @@
 # Rock, Paper, Scissors, Lizard, Spock Project
 Developer: Maksim Popov
-![Rock, Paper, Scissors, Lizard, Spock](LINK)
+![Rock, Paper, Scissors, Lizard, Spock](https://maxgray7-dev.github.io/RPSLS-game/)
 
 ## Description
 
 The Rock, Paper, Scissors, Lizard, Spock game project has a purpose to entertain people. They can visit the site where they can take a break and play a short game with computer. This game often used by people to help them to take a decision about something. Analogue of game "heads and tales".
-![Rock, Paper, Scissors, Lizard, Spock](Picture Link)
+![Rock, Paper, Scissors, Lizard, Spock](https://ibb.co/tsq3bNp)
 
 ## Table of Contents
   
@@ -41,19 +41,18 @@ The Rock, Paper, Scissors, Lizard, Spock game project has a purpose to entertain
 
 ### Colour palette
 
-- In the project were used mainly four colours : Navy, White, Gray and Yellow. ![Palette](link for picture)
+- In the project were used mainly 5 colours : Pink, LightViolet, White, Sky blue and Deep Sea Blue. ![Palette](https://ibb.co/9h3TNPK)
 
 I decided to use easy for eyes palette with soft colors. However, during the coding process I realised that some colors must be more intuitive for users in case to highligh something or not to be confused. An example was hands that used in the game. I believe that hands must have more contract and easier for eyest to understand where is computer and where is user. So Hand for user was picked green to make it more obvious and intuitive to understand.
 
 ### Wireframes
 
-For better visual support, I used the Balsamiq wireframe software to build a simple framework that would help me to imagine how this site look like.
+For better planning I used Balsamiq wireframes software to build a simple framework that would help me to imagine how the web page should look like
 
  Below are attached wireframes :
 
-- [About us](https://i.ibb.co/CQQ6qYr/About-Us.png)
-- [Services](https://i.ibb.co/b7jY7RB/Services.png)
-- [Become a member](https://i.ibb.co/x89hpm9/Become-a-member.png)
+- [Web-page](https://ibb.co/Fnw51yx)
+- 
   
 # Features
 

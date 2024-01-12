@@ -34,9 +34,9 @@ let playerChoiceOptions = {
     "fa-solid fa-hand-spock fa-rotate-270": "spock",
     };
 
-        let player;
-        let computer;
-        let result;
+    let player = choiceButtons.innerText;
+    let computer = computerRandomChoice;
+    let reult;
 
 
 
@@ -48,7 +48,6 @@ choiceButtons.forEach(button => button.addEventListener ("click", () => {
 
 
 
-
 //Computer random choice;
 function computerRandomChoice() {
     let options = ["rock", "paper", "scissors", "lizard", "spock"];
@@ -57,8 +56,21 @@ function computerRandomChoice() {
     return computerNumber;
 }
 
-
-
+//Define Winner
+ function winnerOfTheGame( player, computer) {
+    if (player === computer) {
+        return "Draw!"
+    } else if ((player === "rock" && computer === "scissors" || computer === "lizard") ||
+                (player === "scissors" && computer === "paper" || computer === "lizard") ||
+                (player === "paper" && computer === "rock" || computer === "spock") ||
+                (player === "lizard" && computer === "paper" || computer === "spock") ||
+                (player === "spock" && computer === "scissors" || computer === "rock")) {
+        return "Player Won!";
+                } else {
+        return "Computer Won!"
+                }
+    }
+ 
 
 
 
