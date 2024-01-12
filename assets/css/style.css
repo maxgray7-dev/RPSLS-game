@@ -130,20 +130,16 @@ h2 {
 
 /*Game Zone - Computer VS Player* - settings*/
 
-.default {
+.default-computer {
     font-size: 6rem;
+    color: #2B91AD;
+}
+.default-player {
+    font-size: 6rem;
+    color: #21d15c;
 }
 .default-vs {
     font-size: 6rem;
-}
-
-#computer {
-    color: #2B91AD;
-}
-
-
-#player {
-    color: #21d15c;
 }
 
 .game-area span {
@@ -180,8 +176,10 @@ h2 {
     padding-top: 5px;
     bottom: 10%;
     color: gray;
+}
 
-
+.options .hidden {
+    display:none;
 }
 
 /*Games Scores*/
@@ -239,6 +237,7 @@ h2 {
         margin-top: 90%;
         margin-left: -3rem;
     }
+  
 
     .options>h2 {
         display: flex;
@@ -250,16 +249,17 @@ h2 {
     }
 
     .choiceBtn {
-        font-size: 20px;
-        padding: 3px;
-        margin: 29px 5px;
-        border-radius: 50%;
+        font-size: 9px;
+        margin: 12px 0px;
+        border-radius: 15%;
+        background-color:#CDECEF;
 
     }
 
     .gameScores {
         font-size: 19px;
-        margin: 0px;
+        margin: 18px;
+        margin-top:-40px;
     }
 
     .gameScores #result {
@@ -274,14 +274,16 @@ h2 {
     }
 
     #current-game-result {
-        margin-top: -12rem;
+        margin-top: -8rem;
     }
 
 }
 @media screen and (min-width: 390px) {
    .options {
-    margin-left:0;
     margin-top:100%;
+    height:65px;
+    justify-content:center;
+    margin-left:12px;
    } 
 
    .options h2 {
@@ -289,12 +291,33 @@ h2 {
     left: 35%;
    }
 
+   .options .choiceBtn {
+    width: 4rem;
+    height:2rem;
+    font-size: 14px;
+   }
+
+   #scores-area div {
+    margin-top: -12rem;
+   }
 
 }
 
 
 
 @media screen and (min-width: 540px) {
+    
+    .options .choiceBtn {
+        margin-top: 2rem;
+        width:70px;
+        height:35px;
+        background-color: #CDECEF;
+        font-weight:bolder;
+        cursor: pointer;
+    }
+    
+    
+    
     .gameScores {
     font-size: 19px;
     margin: 15px;
@@ -329,13 +352,14 @@ h2 {
 
     /*Scores Computer and Player - location on the page*/
     #scores-area div {
-        margin-top: -22rem;
+        margin-top: 1rem;
         padding: 0 5rem;
     }
 
         /*Computer and Player Scores - font-size*/
     #scores-area p {
-        font-size:21px;  
+        font-size:22px;  
+        margin-top: -18rem;
     }
     /* TEXT - "Chose your Hand"*/ 
     .options>h2 {
@@ -351,26 +375,25 @@ h2 {
     .options {
         font-size: 34px;
         margin:1px 8px;
+        margin-top:13rem;
     }
 
 
     #current-game-result {
-        margin-top: -23em;
+        margin-top: -12rem;
 
     }
 
     #current-game-result p {
-        font-size: 30px;
+        font-size: 27px;
+        
     }
 
     .choiceBtn {
-    margin: 12rem 5px;
-    justify-items: center;
-    width:3rem;
-    height:3rem;        
+    margin: 3rem 1px;
+    justify-items: center;     
     border-radius: 15%;
-    width: 3rem;
-    height: 3rem;
+
     }
 
 }

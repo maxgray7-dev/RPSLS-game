@@ -62,9 +62,9 @@
             <section class="current-game">
 
                 <div class="game-arena">
-                    <span id="computer" class="default"><i class="fa-solid fa-hand-fist"></i></span>
+                    <span id="computer" class="default-computer"><i class="fa-solid fa-hand-fist"></i></span>
                     <span class="default-vs">VS</span>
-                    <span id="player" class="default"><i class="fa-solid fa-hand-fist"></i></span>
+                    <span id="player" class="default-player"><i class="fa-solid fa-hand-fist"></i></span>
                 </div>
 
             </section>
@@ -91,12 +91,13 @@
 
             <!-- Hand choice-->
             <section class="options">
-                <h2>Choose your hand</h2>
-                <button class="choiceBtn"><i class="fa-solid fa-hand-fist"></i></button>
-                <button class="choiceBtn"><i class="fa-solid fa-hand-scissors"></i></button>
-                <button class="choiceBtn"><i class="fa-solid fa-hand"></i></button>
-                <button class="choiceBtn"><i class="fa-solid fa-hand-lizard"></i></button>
-                <button class="choiceBtn"><i class="fa-solid fa-hand-spock"></i></button>
+                <h2 class="hidden">Choose your hand</h2>
+
+                <button id ="rockBtn" class="choiceBtn">Rock</button>
+                <button id="scissorsBtn" class="choiceBtn">Scissors</button>
+                <button id ="paperBtn" class="choiceBtn">Paper</button>
+                <button id="lizardBtn" class="choiceBtn">Lizard</button>
+                <button id="spockBtn" class="choiceBtn">Spock</i></button>
             </section>
 
 

@@ -3,11 +3,19 @@ const openRules = document.getElementById('open-rules-btn');
 const rules = document.getElementById('rules-container');
 const close = document.getElementById('close');
 
-const computerHand = document.getElementById("computer");
-const playerHand = document.getElementById("player");
+//Player Buttons
+const rockButton = document.getElementById("#rockBtn")
+const scissorsButton = document.getElementById("scissorsBtn")
+const paperButton = document.getElementById("#paperBtn")
+const lizardButton = document.getElementById("#lizardBtn")
+const spockButton = document.getElementById("#spockBtn")
+
+const computerHand = document.getElementById("#computer");
+const playerHand = document.getElementById("#player");
 const gameResult = document.querySelector("#result")
 const computerChoice = document.getElementsByClassName("c_default");
 const playerChoice = document.getElementsByClassName("p_default");
+const choiceButtons = document.querySelectorAll(".choiceBtn")
 
 // Create array for computer's choices
 let computerChoiceOptions = {
@@ -25,40 +33,66 @@ let playerChoiceOptions = {
     "fa-solid fa-hand-lizard": "lizard",
     "fa-solid fa-hand-spock fa-rotate-270": "spock",
     };
-
-
-
-let computer;
-let player;
-let result;
-
-
-//Computer random choice;
-function computerRandomChoice() {
- let options = ["rock", "paper","scissors", "lizard","spock"];
- let randomNumber = Math.floor(Math.random()*5); // only indeces from 0-4
- let computerNumber = options[randomNumber];
- return computerNumber;
-
-}
-
-//Player random choice;
-function Choice()
-
-
-
-
-
-
-
-
-
-
-
-
+//Rules Button
 openRules.onclick = function () {
     rules.style.display = "block";
 };
 close.onclick = function () {
     rules.style.display = "none";
 };
+
+
+let computer;
+let player;
+let result;
+
+//Player choice;
+
+choiceButtons.forEach(button => button.addEventListener ("click", () => {
+    player = playerChoiceOptions();
+
+    switch(player) {
+        case 1:
+            rockButton = "rock";
+            break;
+        case 2:
+            scissorsButton = "scissors";
+            break;
+        case 3:
+            paperButton ="paper";
+            break;
+        case 4:
+            lizardButton ="lizard";
+            break;
+        case 5:
+            spockButton ="spoke";
+            break;
+    }
+
+
+}))
+
+
+
+
+//Computer random choice;
+function computerRandomChoice() {
+    let options = ["rock", "paper", "scissors", "lizard", "spock"];
+    let randomNumber = Math.floor(Math.random() * 5); // only indeces from 0-4
+    let computerNumber = options[randomNumber];
+    return computerNumber;
+
+}
+
+
+
+
+
+
+
+// Event Listeners for buttons that player clicks;
+
+
+
+
+
