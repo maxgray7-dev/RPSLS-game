@@ -3,19 +3,14 @@ const openRules = document.getElementById('open-rules-btn');
 const rules = document.getElementById('rules-container');
 const close = document.getElementById('close');
 
-//Player Buttons
-const rockButton = document.getElementById("#rockBtn")
-const scissorsButton = document.getElementById("scissorsBtn")
-const paperButton = document.getElementById("#paperBtn")
-const lizardButton = document.getElementById("#lizardBtn")
-const spockButton = document.getElementById("#spockBtn")
-
 const computerHand = document.getElementById("#computer");
 const playerHand = document.getElementById("#player");
 const gameResult = document.querySelector("#result")
 const computerChoice = document.getElementsByClassName("c_default");
 const playerChoice = document.getElementsByClassName("p_default");
-const choiceButtons = document.querySelectorAll(".choiceBtn")
+const choiceButtons = document.querySelectorAll(".choiceBtn");
+const computerScore = 0;
+const playerScore = 0;
 
 // Create array for computer's choices
 let computerChoiceOptions = {
@@ -36,7 +31,7 @@ let playerChoiceOptions = {
 
     let player = choiceButtons.innerText;
     let computer = computerRandomChoice;
-    let reult;
+    let result;
 
 
 
@@ -45,6 +40,15 @@ choiceButtons.forEach(button => button.addEventListener ("click", () => {
     player = playerChoiceOptions();
     return player.innerText;
 }))
+
+//Event Listener for each button
+rockButton.addEventListener("click", function () {
+    let icon =player.firstElementChild;
+    icon.classList.remove("fa-hand-fist fa-rotate-270")
+    removeIcons(icon);
+    icon.classList.add("fa-hand-fist fa-rotate-270")
+})
+
 
 
 
@@ -64,20 +68,22 @@ function computerRandomChoice() {
                 (player === "scissors" && computer === "paper" || computer === "lizard") ||
                 (player === "paper" && computer === "rock" || computer === "spock") ||
                 (player === "lizard" && computer === "paper" || computer === "spock") ||
-                (player === "spock" && computer === "scissors" || computer === "rock")) {
+                (player === "spock" && computer === "scissors" || computer === "rock")) 
+    {
         return "Player Won!";
-                } else {
-        return "Computer Won!"
-                }
+    } else {
+        return "Computer Won!";
     }
- 
+}
+
+
+
+
 
 
 
 
 // Event Listeners for buttons that player clicks;
-
-
 
 
 //Rules Button

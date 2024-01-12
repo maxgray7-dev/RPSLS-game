@@ -41,78 +41,32 @@ The Rock, Paper, Scissors, Lizard, Spock game project has a purpose to entertain
 
 ### Colour palette
 
-- In the project were used mainly 5 colours : Pink, LightViolet, White, Sky blue and Deep Sea Blue. ![Palette](https://ibb.co/9h3TNPK)
+- In the project were used mainly 5 colours : Pink, LightViolet, White, Sky blue and Deep Sea Blue. ![Palette](https://i.ibb.co/KwkZKMB/color-palette.png" alt="color-palette)
 
 I decided to use easy for eyes palette with soft colors. However, during the coding process I realised that some colors must be more intuitive for users in case to highligh something or not to be confused. An example was hands that used in the game. I believe that hands must have more contract and easier for eyest to understand where is computer and where is user. So Hand for user was picked green to make it more obvious and intuitive to understand.
 
 ### Wireframes
 
-For better planning I used Balsamiq wireframes software to build a simple framework that would help me to imagine how the web page should look like
+I used Balsamiq wireframes software to build a simple framework that would help me to imagine how the web page should look like
 
- Below are attached wireframes :
+ Below is attached wireframe :
 
 - [Web-page](https://ibb.co/Fnw51yx)
-- 
+
   
 # Features
 
 ### Existing Features
 
-__Header__  On each page should be a header with a navigation buttons, that responsive and stays on the top of the page for users to be able navigate at anytime anfdfrom any page.
-
-__Navigation Bar__
-
-![Nav Bar](https://i.ibb.co/8KLgwVs/Navigation-bar.png")
-
-Navigation bar allows users to navigate between 4 different sections of the project.
-It takes users to the pages: About Us, Services, Gallery, and Become a member.
-
-- "About Us" provides users information what is the value of joining the ski club club, list of benefits and dates for the next trips.
-- "Services" page shows variety of benefits that people would het if they join club.
-- "Gallery" Page brings the user on the page with photos othat illustrate and shows experience that user can benefit by joining the club.
-- "Become a member" page provides a simple form for a user to complete. This is essential but simple information for the club about the user that interested to join. It includes: name, surname, email and their interest: ski, snowboard, or both. After completing the page the club can contact and reach the person who showed the interest.
-
-__Footer__
-
-Footer should be visible on the each page and includes The Ski Club details, social networks,  provides access to weather podcast and live cameras for users comfort.
-
-#### "About US" Page
-
-  ![About US](https://i.ibb.co/2KGsJzT/Home-Page.png)
-
-- The About Us page helps users to navigate through website. On this page user can see visual representation of the club. The page has attractive picture with the family thay enjoy skiing. The picture indicates a family on it, and that members of the club can be different ages and even families.
-- About Us Page has a navigation bar that located in the right top corner of the screen, tha will allow users to move between pages when they look for information about the club.
-- This page also includes information about club, and the coming next trips.
-- In the bottom of the page placed the footer with address, social network links and 2 buttons that wouldve camera to see the mountains. These buttons might be very helpful for users to check weather before starting any activities during their day on resort, and additionally it benefits to the website because it could bring additional users daily on our website to check forecast regularly.
-
-#### "Services" Page
-
- ![Services](https://i.ibb.co/GxDCpSC/Services.png)
-
-- Service page helps users to find more information about additional services that club provides.
-- It helps users to find additional benefits and motivate them to join the club.
-
-#### "Gallery" Page
-
- ![Gallery](https://i.ibb.co/M1H8s5P/Gallery.png)
-
-- Gallery page brings visual benefit to the project.
-- Users have a chance to see skiers enjoy their time, night city, festivals, and that might help them to make their decision.
-
-#### "Become a member" Page
-
- ![Become a member](https://i.ibb.co/KDvkfHM/signup.png)
-
-- This section invites users to request membership. Interested in skiing or snowboarding users can fill up fields with basic information to request membership.
-- Radio buttons provide information regarding users preferences to skiing, snowboarding or both options. That would help organisators to provide capacity and predict equipment demand.
-- To complete the form required to fill up all fileds.
-- Information will bne shared with the SKI CLUB and they email users with desision and further instructions.
+The web page has a simple and intuitive design. The page allows user to play a game Rock, Scissors, Paper, Lizard and Spock. User can see two hands that interact with computer and player choices. 
+After picking the button of choice, JS displays user's options and computer option. 
+In addition it shows result and adds scores to the winner.
 
 ### Future improvements left to implement
 
-- The current project has many options tor further development.
-- It could be useful to add the map of Tignes.
-- Could be benefitial to add a section with feedback and reccomendations.
+- The current project has other options tor development.
+- It could be an interestin idea to add orher pages with simple and easy games.
+- I would like to add more animation to the page if I would have more time.
   
 # Technologies
 
@@ -122,9 +76,10 @@ In the current project were used next technologies and apps:
 - Codeanywhere [link](https://app.codeanywhere.com/)
 - HTML5
 - CSS3
+- JavaScript
 - Google fonts [link](https://fonts.google.com/)
-- Font awesome website [link](https://fontawesome.com/)
-- My Color Space [link](https://mycolor.space/?hex=%238057C7&sub=1)
+- Font awesome [link](https://fontawesome.com/)
+- Adobe Color [link](https://color.adobe.com/explore)
 - MDN Web docs [link](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - IMGBB [link](https://imgbb.com/)
 - Am I responsive? [link](https://ui.dev/amiresponsive)
