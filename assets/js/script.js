@@ -34,34 +34,16 @@ let playerChoiceOptions = {
     "fa-solid fa-hand-spock fa-rotate-270": "spock",
     };
 
-let computer;
-let player;
-let result;
+        let player;
+        let computer;
+        let result;
+
+
 
 //Player choice;
-
 choiceButtons.forEach(button => button.addEventListener ("click", () => {
     player = playerChoiceOptions();
-
-    switch(player) {
-        case 1:
-            playerChoiceOptions[0] = "rock";
-            break;
-        case 2:
-            playerChoiceOptions[1] = "scissors";
-            break;
-        case 3:
-            playerChoiceOptions[2] ="paper";
-            break;
-        case 4:
-            playerChoiceOptions[3] ="lizard";
-            break;
-        case 5:
-            playerChoiceOptions[4] ="spoke";
-            break;
-    }
-
-
+    return player.innerText;
 }))
 
 
@@ -73,7 +55,6 @@ function computerRandomChoice() {
     let randomNumber = Math.floor(Math.random() * 5); // only indeces from 0-4
     let computerNumber = options[randomNumber];
     return computerNumber;
-
 }
 
 
