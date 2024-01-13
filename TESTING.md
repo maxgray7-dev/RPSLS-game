@@ -90,7 +90,7 @@ and than I replaced with brackets  :
  1 - for option buttons - 'visibility:hidden';
  2 - for reset button - 'visibility:visible';
 
-Nevertheless, I believe this challenge showed me that I must to have more practice and there are massive 
+Nevertheless, I believe this challenge showed me that I must to practice a lot. I wish I had more time for this project as I would like to add more animation elements and additional perks to this page. 
 
 ## Browsers were tested
 
