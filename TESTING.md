@@ -26,6 +26,7 @@ To ensure site functions correctly I checked HTML, CSS, and Javascipt.code.
 
 
 # Testing HTML by Validator :
+![My HTML Errors](https://i.ibb.co/MggJg0s/HTML-errors.png)
 
 ### HTML Validator showed the next errors:
 

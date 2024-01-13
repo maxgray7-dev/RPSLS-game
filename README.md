@@ -3,7 +3,7 @@ Developer: Maksim Popov;
 
 [GAME Link](https://maxgray7-dev.github.io/RPSLS-game/)
 
-![Site preview](https://i.ibb.co/QdC5ZGL/MainPage.png)
+![Site preview](https://i.ibb.co/8bYR3Xv/am-i-responsive.png")
 
 ## Description
 
@@ -54,15 +54,13 @@ I used Balsamiq wireframes software to build a simple framework that would help 
 
  Below is attached wireframe :
 
-- ![Web-page](https://ibb.co/Fnw51yx)
-
-  
+[Web-page](https://ibb.co/Fnw51yx)
 # Features
 
 ### Existing Features
 
 The web page has a simple and intuitive design. The page allows user to play a game Rock, Scissors, Paper, Lizard and Spock. User can see two hands that interact with computer and player choices. 
-After picking the button of choice, JS displays user's options and computer option. 
+After picking the button of choice, JS displays user's options and computer option.
 In addition it shows result and adds scores to the winner.
 
 ### Future improvements left to implement
@@ -84,6 +82,7 @@ In the current project were used next technologies and apps:
 - Font awesome [link](https://fontawesome.com/)
 - Adobe Color [link](https://color.adobe.com/explore)
 - MDN Web docs [link](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- <https://css-tricks.com/almanac/>
 - IMGBB [link](https://imgbb.com/)
 - Am I responsive? [link](https://ui.dev/amiresponsive)
 - WC3 Validator for HTML [link](https://validator.w3.org/)
@@ -95,7 +94,7 @@ Testing was completed. All information regarding test can be found  - [here](TES
 
 # Deployments
 
-Current Project was developed by using [codeanywhere](https://app.codeanywhere.com/) tool and stored in [github](https://github.com/).
+Current Project was developed by using [codeanywhere](https://app.codeanywhere.com/) tool and stored in [github](https://github.com/)
 It was uploaded from GitHub Pages by following next steps:
 
 1. In the GitHub navigate to __repositories__.
@@ -111,7 +110,7 @@ It was uploaded from GitHub Pages by following next steps:
 
 This project can be cloned by following next steps:
 
-- copy the git clone `https://github.com/maxgray7-dev/ski-club_project.git` into terminal.
+- copy the git clone `https://github.com/maxgray7-dev/RPSLS-game.git` into terminal.
 - to delete this project type in terminal `git remote rm original`
 
 # Forking
@@ -132,16 +131,10 @@ There are icons that were taken from source listed below. In addition to that I 
 
 
 - Hand Icons [source](https://fontawesome.com/)
-  
-  
-
 # Code
 
-This is my first experience in coding my own webpage. This was a challenging project but also very interesting with a lot of new approaches to learn. During work on this project I learned how to use HTML and CSS computer languages. To complete this peoject I got support from Code Institute, and used Love Running Project to guide me in some questions.
-Nevertheless, in the moments when I faced difficulties and tried to find right answers I felt great support that was shown to me by my mentor Chris Quinn. You have my big gratitude for your support and wise support how  Ican improve mu code.
+This was my first experience of coding in JavaScript on my own. I found this project quite interesting but challenging. It required a lot of information to re-read, re-watch, and to be practiced before implemented. This project required from me to search for additional sources, codes and and rewatch some videos for multiple times.
+I know now the principle but I have to practice much more and continue learning.
 
 # Acknowledgement
-
-I would like to express my sincere gratitude to my mentor - Chris Quinn, who supported me during this project. He helped me with suggestions, feedback and answering incredible difficult to me questions. He made my work much less stressful and helped me to believe in my capabilities.
-Additionally I would like to thank Code Institute for providing great learning material, that helped me to complete the project and gave opportunity to practice and implement gathered skills on practice.
-Also I would like to express massive gratitude to the team od students that I met during my first Hackaton: Craig Thomasson, Stefania Frustagli, Nick Moore. Espe
+ In this chapter I would like to express my gratitude to Code Institute for providing essentialand  detailed information about JavaScript materials. It was very helpful when I could learn and peactice. Also, Thank you very much Stefania Frustagli who inspired me and supported me during the time I was writing the code.
