@@ -27,7 +27,7 @@ let playerChoiceOptions = {
     spock: '<div class="p-spock"><i class="fa-solid fa-hand-spock fa-rotate-270"></i></div>',
     default: '<i class="fa-solid fa-hand-fist fa-flip-horizontal"></i>',
 };
-
+// Determine max score for the winner
 const MAX_SCORE = 5;
 
 let playerScore = 0;
@@ -36,6 +36,8 @@ const playerScoreEl = document.getElementById('playerScore');
 let computerScore = 0;
 const computerScoreEl = document.getElementById('computerScore');
 
+
+//add event listener for buttons
 choiceButtons.forEach((button) =>
     button.addEventListener('click', () => {
         // check if one the players reaches the max score
@@ -51,7 +53,9 @@ choiceButtons.forEach((button) =>
         playerHand.innerHTML = playerChoiceOptions[playerChoice];
 
         const roundResult = compareRound(playerChoice, computerChoice);
+        
 
+        //Add a score to the winner result
         if (roundResult === 'Computer Win') {
             computerScore++;
             computerScoreEl.innerHTML = computerScore;
@@ -60,7 +64,7 @@ choiceButtons.forEach((button) =>
             playerScoreEl.innerHTML = playerScore;
         }
 
-        // decide the winner
+        // decide the winner and reset scores
         if (computerScore === MAX_SCORE) {
             gameResultElement.innerText = 'Computer Won!';
             document.querySelector('.options').style = 'visibility:hidden';
@@ -72,7 +76,7 @@ choiceButtons.forEach((button) =>
         }
     })
 );
-
+    // determine winner hand by using rules
  function compareRound(playerChoice, computerChoice) {
   if (playerChoice === computerChoice) {
      return 'Draw!';
