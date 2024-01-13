@@ -112,7 +112,7 @@ resetButton.addEventListener('click', function () {
     playerHand.innerHTML = playerChoiceOptions.default;
     document.querySelector('.options').style = 'visibility:visible';
     gameResultElement.innerText = '';
-    resetButton.style = 'visibility:hidden';
+    resetButton.style = 'display:none';
 });
 
 //Rules Button
