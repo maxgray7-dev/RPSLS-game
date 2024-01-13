@@ -1,107 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Search engine meta tags !-->
-    <meta name="description" content="Rock, paper, scissors, lizard, Spock game" />
-    <meta name="keywords" content="Rock, paper, scissors, lizard, spoke, game, javascript game, online game" />
+    <meta
+      name="description"
+      content="Rock, paper, scissors, lizard, Spock game"
+    />
+    <meta
+      name="keywords"
+      content="Rock, paper, scissors, lizard, spoke, game, javascript game, online game"
+    />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/png" href="./assets/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/favicon180x180.png" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./assets/favicon/favicon.ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/favicon180x180.png"
+    />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon16x16.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon16x16.png"
+    />
 
     <!-- Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS Style list link-->
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <title>"Rock, Paper, Scissors, Lizard, Spock" game</title>
-</head>
+  </head>
 
-<body>
-    <h1 class="heading"><img class="logo" src="./assets/favicon/favicon64x64.png" alt="logo"><br>Rock, Paper, Scissors,
-        Lizard, Spock</h1>
+  <body>
+    <h1 class="heading">
+      <img
+        class="logo"
+        src="./assets/favicon/favicon64x64.png"
+        alt="logo"
+      /><br />Rock, Paper, Scissors, Lizard, Spock
+    </h1>
     <div class="main-div">
-        <button type="button" id="open-rules-btn" class="rules-btn" aria-label="Check the game rules">
-            <i class="fa-solid fa-scroll"></i>Rules</button>
+      <button
+        type="button"
+        id="open-rules-btn"
+        class="rules-btn"
+        aria-label="Check the game rules"
+      >
+        <i class="fa-solid fa-scroll"></i>Rules
+      </button>
 
-        <div id="rules-container">
-            <div id="rules">
-                <h1>How to play</h1>
+      <div id="rules-container">
+        <div id="rules">
+          <h1>How to play</h1>
 
-                <p class="rules-text">
-                    Rock crushes lizard or crushes scissors.<br />
-                    Paper covers rock or disproves Spock.<br />
-                    Scissors cuts paper or decapitates lizard.<br />
-                    Lizard poisons Spock or eats paper.<br />
-                    Spock smashes scissors or vaporizes rock.<br></p>
+          <p class="rules-text">
+            Rock crushes lizard or crushes scissors.<br />
+            Paper covers rock or disproves Spock.<br />
+            Scissors cuts paper or decapitates lizard.<br />
+            Lizard poisons Spock or eats paper.<br />
+            Spock smashes scissors or vaporizes rock.<br />
+          </p>
 
-                <p class="get5scores">Get 5 scores before computer does!</p>
+          <p class="get5scores">Get 5 scores before computer does!</p>
 
-                <button id="close">Ready to start</button>
+          <button id="close">Ready to start</button>
+        </div>
+      </div>
+
+      <!-- GAME CONTENT-->
+
+      <main class="game-area">
+        <h2>Game Arena</h2>
+
+        <section class="current-game">
+          <div class="game-arena">
+            <div id="computer-hand" class="default-computer">
+              <i class="fa-solid fa-hand-fist"></i>
             </div>
+            <span class="default-vs">VS</span>
+            <div id="player-hand" class="default-player">
+              <i class="fa-solid fa-hand-fist fa-flip-horizontal"></i>
+            </div>
+          </div>
+        </section>
+
+        <div id="result"></div>
+
+        <div class="scores-area">
+          <p>Computer: <span id="computerScore">0</span></p>
+          <p>Player: <span id="playerScore">0</span></p>
         </div>
 
-        <!-- GAME CONTENT-->
+        <!-- Hand choice-->
+        <section class="options">
+          <button id="rock">Rock</button>
+          <button id="scissors">Scissors</button>
+          <button id="paper">Paper</button>
+          <button id="lizard">Lizard</button>
+          <button id="spock">Spock</button>
+        </section>
+        <button class="reset-button">Play again</button>
+      </main>
 
-        <main class="game-area">
-            <h2>Game Arena</h2>
+      <!-- Font Awesome Link -->
+      <script
+        src="https://kit.fontawesome.com/d423496652.js"
+        crossorigin="anonymous"
+      ></script>
 
-            <section class="current-game">
-
-                <div class="game-arena">
-                    <div id="computer-hand" class="default-computer"><i class="fa-solid fa-hand-fist"></i></div>
-                    <span class="default-vs">VS</span>
-                    <div id="player-hand" class="default-player"><i
-                            class="fa-solid fa-hand-fist fa-flip-horizontal"></i></div>
-                </div>
-
-            </section>
-
-            <div id="result"></div>
-
-            <div class="scores-area">
-                <p>Computer: <span id="computerScore">0</span></p>
-                <p>Player: <span id="playerScore">0</span></p>
-            </div>
-
-            <!-- Hand choice-->
-            <section class="options">
-                <button id="rock">Rock</button>
-                <button id="scissors">Scissors</button>
-                <button id="paper">Paper</button>
-                <button id="lizard">Lizard</button>
-                <button id="spock">Spock</button>
-            </section>
-            <button class="reset-button">Play again</button>
-
-        </main>
-
-
-        <!-- Font Awesome Link -->
-        <script src="https://kit.fontawesome.com/d423496652.js" crossorigin="anonymous"></script>
-
-        <!-- Javascript  Link-->
-        <script src="./assets/js/script.js"></script>
+      <!-- Javascript  Link-->
+      <script src="./assets/js/script.js"></script>
     </div>
-</body>
-
-<footer>
-
-    <a href="https://github.com/maxgray7-dev/" id="contactMe" target="_blank" rel="noopener"
-        aria-label="Visit My Github"><i class="fa-brands fa-square-github"></i></a></li>
-</footer>
+    <footer><a href="https://github.com/maxgray7-dev/" id="contactMe" target="_blank" rel="noopener"
+            aria-label="Visit My Github">
+            <i class="fa-brands fa-square-github"></i></a>
+    </footer>
+  </body>
 
 </html>
