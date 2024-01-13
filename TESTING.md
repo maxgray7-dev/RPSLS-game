@@ -47,14 +47,18 @@ CSS Validator didn't show any mistakes.
 
 
 ## Manual Testing
-|To be Tested       | Test Actions  | Expected Outcome                       | Tested Outcome                     | Passed    |
---------------------|---------------|----------------------------------------|------------------------------------|-----------|
-|"Rules" Button     |Button         |Opens a window with rules               | Opens window in center of the page | Passed    |
-|"Ready to start"   |Button         |Closes the opened windows               | Opened windows closed              | Passed    |
-|Choice Buttons     |Buttons        |Each button picks right option          | Buttons operated correctly         | Passed    |
-|Game Arena "Hands" |Hand Icons     |Each Hand corresponds correctly         | Icons reflected Player choice right| Passed    |
-|Scores             |Scores Display |Scores indicate correct game result     | Scores respond to game result      | Passed    |
-|GitHub Icon        |"Link" button  |Links to github, opens in a new window  | Opens a new window with Github     | Passed    |
+|To be Tested       | Test Actions  | Expected Outcome                       | Tested Outcome                        | Passed    |
+--------------------|---------------|----------------------------------------|---------------------------------------|-----------|
+|"Rules" Button     |Button         |Opens a window with rules               | Opens window in center of the page    | Passed    |
+|"Ready to start"   |Button         |Closes the opened windows               | Opened windows closed                 | Passed    |
+|Choice Buttons     |Buttons        |Each button picks right option          | Buttons operated correctly            | Passed    |
+|Game Arena "Hands" |Hand Icons     |Each Hand corresponds correctly         | Icons reflected Player choice right   | Passed    |
+|Hands Icons        |Hand Icons     |Hand Icons must be turned correctly     | Hands Icon face the right direction   | Passed    |
+|Scores             |Scores Display |Scores indicate correct game result     | Scores respond to game result         | Passed    |
+|Player Wins!       |Display result |When a game finished appears result     | Player wins 5 times- "Player Wins!"   | Passed    |
+|Computer Wins!     |Display result |When a game finished appears result     | Computer wins 5 times- "Player Wins!" | Passed    |
+|Draw!              |Draw Result    |If both hands the same display Draw!    | When both hands the same shows "Draw" | Passed    |
+|Footer             |"Link" button  |Links to github, opens in a new window  | Opens a new window with Github        | Passed    |
 
 
 

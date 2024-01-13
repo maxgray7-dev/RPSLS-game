@@ -56,21 +56,21 @@ choiceButtons.forEach((button) =>
         
 
         //Add a score to the winner result
-        if (roundResult === 'Computer Win') {
+        if (roundResult === 'Computer Wins') {
             computerScore++;
             computerScoreEl.innerHTML = computerScore;
-        } else if (roundResult === 'Player Win') {
+        } else if (roundResult === 'Player Wins') {
             playerScore++;
             playerScoreEl.innerHTML = playerScore;
         }
 
         // decide the winner and reset scores
         if (computerScore === MAX_SCORE) {
-            gameResultElement.innerText = 'Computer Won!';
+            gameResultElement.innerText = 'Computer Wins!';
             document.querySelector('.options').style = 'visibility:hidden';
             resetButton.style = 'visibility:visible';
         } else if (playerScore === MAX_SCORE) {
-            gameResultElement.innerText = 'Player Won!';
+            gameResultElement.innerText = 'Player Wins!';
             document.querySelector('.options').style = 'visibility:hidden';
             resetButton.style = 'visibility:visible';
         }
@@ -87,9 +87,9 @@ choiceButtons.forEach((button) =>
     (playerChoice === 'lizard' && (computerChoice ==='paper'|| computerChoice ==='spock')) ||
     (playerChoice === 'spock' && (computerChoice ==='scissors'||computerChoice ==='rock'))
  )  { 
-    return 'Player Win';
+    return 'Player Wins!';
     } else {
-     return 'Computer Win';
+     return 'Computer Wins!';
    }
  }
 
