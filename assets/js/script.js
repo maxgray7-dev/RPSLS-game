@@ -93,8 +93,6 @@ choiceButtons.forEach((button) =>
    }
  }
 
-
-
 //Computer random choice;
 function computerRandomChoice() {
     let options = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
