@@ -62,54 +62,30 @@
             <section class="current-game">
 
                 <div class="game-arena">
-                    <span id="computer" class="default-computer"><i class="fa-solid fa-hand-fist"></i></span>
+                    <div id="computer-hand" class="default-computer"><i class="fa-solid fa-hand-fist"></i></div>
                     <span class="default-vs">VS</span>
-                    <span id="player" class="default-player"><i class="fa-solid fa-hand-fist"></i></span>
+                    <div id="player-hand" class="default-player"><i
+                            class="fa-solid fa-hand-fist fa-flip-horizontal"></i></div>
                 </div>
 
             </section>
 
-            <!-- Hidden Icons-->
-            <section class="hidden">
-                <!--Computer's hands-->
-                <span id="computer-hand" class="c_default rock"><i class="fa-solid fa-hand-fist fa-rotate-90"></i></span>
-                <span id="computer-hand" class="c_default scissors"><i
-                        class="fa-solid fa-hand-scissors fa-flip-horizontal"></i></span>
-                <span id="computer-hand" class="c_default paper"><i class="fa-solid fa-hand fa-rotate-90"></i></span>
-                <span id="computer-hand" class="c_default lizard"><i
-                        class="fa-solid fa-hand-lizard fa-flip-horizontal"></i></span>
-                <span id="computer-hand" class="c_default spock"><i
-                        class="fa-solid fa-hand-spock fa-rotate-90"></i></span>
-                <!--Player's hands-->
-                <span id="player-hand" class="p_default rock"><i class="fa-solid fa-hand-fist fa-rotate-270"></i></span>
-                <span id="player-hand" class="p_default scissors"><i class="fa-solid fa-hand-scissors"></i></span>
-                <span id="player-hand" class="p_default paper"><i class="fa-solid fa-hand fa-rotate-270"></i></span>
-                <span id="player-hand" class="p_default lizard"><i class="fa-solid fa-hand-lizard"></i></span>
-                <span id="player-hand" class="p_default spock"><i class="fa-solid fa-hand-spock fa-rotate-270"></i></span>
-            </section>
+            <div id="result"></div>
 
+            <div class="scores-area">
+                <p>Computer: <span id="computerScore">0</span></p>
+                <p>Player: <span id="playerScore">0</span></p>
+            </div>
 
             <!-- Hand choice-->
             <section class="options">
-                <h2 class="hidden">Choose your hand</h2>
-
-                <button id ="rockBtn" class="choiceBtn">Rock</button>
-                <button id="scissorsBtn" class="choiceBtn">Scissors</button>
-                <button id ="paperBtn" class="choiceBtn">Paper</button>
-                <button id="lizardBtn" class="choiceBtn">Lizard</button>
-                <button id="spockBtn" class="choiceBtn">Spock</i></button>
+                <button id="rock">Rock</button>
+                <button id="scissors">Scissors</button>
+                <button id="paper">Paper</button>
+                <button id="lizard">Lizard</button>
+                <button id="spock">Spock</i></button>
             </section>
-
-
-
-
-            <div id="scores-area">
-                <div><p class="gameScores" id="computerScores">Computer:<span id="pc_won">0</span></p></div>
-                <div><p class="gameScores" id="playerScores">Player:<span id="player_won">0</span></p></div>
-            </div>
-            <div id="current-game-result">
-                <p class="gameScores" id="resultScores"><span id="result">RESULT</span></p>
-            </div>
+            <button class="reset-button">Play again</button>
 
         </main>
 
@@ -123,8 +99,8 @@
 
 <footer>
 
-    <a href="https://github.com/maxgray7-dev/" id="contactMe" target="_blank" rel="noopener" aria-label="Visit My Github"><i
-            class="fa-brands fa-square-github"></i></a></li>
+    <a href="https://github.com/maxgray7-dev/" id="contactMe" target="_blank" rel="noopener"
+        aria-label="Visit My Github"><i class="fa-brands fa-square-github"></i></a></li>
 </footer>
 
 </html>

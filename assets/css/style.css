@@ -6,14 +6,12 @@
     #CDECEF - sky blue, 
     #2B91AD - deep blue */
 
-
 /* General settings */
 body {
-    background: #2B91AD;
-    font-family: "Oswald", "Fira Sans", sans-serif;
-    color: #F2F7F9;
+    background: #2b91ad;
+    font-family: 'Oswald', 'Fira Sans', sans-serif;
+    color: #f2f7f9;
     text-align: center;
-   
 }
 
 /* Heading */
@@ -24,104 +22,89 @@ body {
 }
 
 /* Rules Button  */
-button {
+.rules-btn {
     display: block;
     margin: auto;
     width: 10rem;
     height: 2rem;
     margin-bottom: 1rem;
-
 }
 
 /* Rules container*/
 #rules-container {
     box-sizing: border-box;
     display: none;
-    color: #F2F7F9;
+    color: #f2f7f9;
 }
 
 #rules {
     position: fixed;
     z-index: 1;
-    padding-bottom: 10px;
-    /* Location of the box */
     top: 50%;
-    bottom: 50%;
-    margin: auto;
-    left: 25px;
-    right: 25px;
-    /*Max width and height */
-    width: 50%;
-    height: 50%;
-    letter-spacing: 1.5px;
+    left: 50%;
+    width: 70%;
+    padding: 20px;
+    max-width: 400px;
+    max-height: 600px;
+    transform: translate(-50%, -50%);
     overflow: auto;
-    background-color: #2B91AD;
+    background-color: #2b91ad;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .get5scores {
     color: rgb(20, 239, 231);
-
 }
 
 /* "Close" button */
 #close {
-    background-color: #CDECEF;
-    color: #2B91AD;
-    border: 3px solid #D3DDEA;
-    margin: 1rem;
-    margin-top: 50px;
-    margin-left: 40%;
+    background-color: #cdecef;
+    color: #2b91ad;
+    border: 3px solid #d3ddea;
+    margin: 50px auto 0;
     font-size: 0.9rem;
-    margin-bottom: 10%;
     border-radius: 0.5rem;
 }
 
-    #open-rules-btn:hover {
-        color: #FFDAD8;
-        border-color: #2116c8;
-        background-color: #2B91AD;
-        border-radius:15%;
-    }
-
-
+#open-rules-btn:hover {
+    color: #ffdad8;
+    border-color: #2116c8;
+    background-color: #2b91ad;
+    border-radius: 15%;
+}
 
 /*  SETTINGS FOR HANDS */
 
 /*Game Zone*/
 
 h2 {
-
     color: black;
     letter-spacing: 1.5px;
     font-size: 35px;
 }
 
 .game-area {
-    background-color: #FFDAD8;
+    background-color: #ffdad8;
     box-sizing: border-box;
     width: 85%;
-    height: 75vh;
-    max-height: 600px;
     max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20%;
-    padding-top: 2%;
-    padding-bottom: 20%;
+    margin: 30px auto 0;
+    padding: 50px 30px;
     margin-bottom: 20px;
-
+    position: relative;
 }
 
 .game-arena {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     padding: 1rem 0;
     margin: 0.5rem 1rem;
     border-right: 1rem;
     color: gray;
     font-size: 10px;
-
-
+    gap: 50px;
 }
 
 .hidden {
@@ -129,335 +112,140 @@ h2 {
 }
 
 /*Game Zone - Computer VS Player* - settings*/
+.default-computer,
+.default-player {
+    width: 150px;
+    height: 150px;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .default-computer {
     font-size: 6rem;
-    color: #2B91AD;
+    color: #2b91ad;
 }
+
 .default-player {
     font-size: 6rem;
     color: #21d15c;
 }
+
+.p-fist,
+.p-paper,
+.p-spock {
+    transform: scaleY(-1);
+}
+
 .default-vs {
     font-size: 6rem;
 }
 
-.game-area span {
-    padding: 0 10px;
-
-}
-
 .options {
     display: flex;
-    position:absolute;
     align-items: center;
-    bottom: 15%;
-    padding:3px;
-
-    
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
 }
-.options > h2 {
+
+.options button {
+    border-radius: 15%;
+    color: gray;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+.options>h2 {
     align-items: center;
     display: flex;
-    position:absolute;
+    position: absolute;
     font-size: 15px;
     color: gray;
     bottom: 85%;
-    left:30%;
-}
-
-.choiceBtn {
-    justify-items: center;;
-    font-size: 2rem;
-    margin-left:10px;
-    border-radius: 15%;
-    width: 3rem;
-    height: 3rem;
-    padding-top: 5px;
-    bottom: 10%;
-    color: gray;
-}
-
-.options .hidden {
-    display:none;
+    left: 30%;
 }
 
 /*Games Scores*/
-#scores-area {
+.scores-area {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     letter-spacing: 1px;
-    font-size: 12px;
+    font-size: 28px;
+    gap: 50px;
 }
 
-#computerScores {
-    color: #2B91AD;
-    font-size: 15px;
+.scores-area p:first-child,
+.scores-area p:last-child {
+    margin: 0;
 }
 
-#playerScores {
+.scores-area p:first-child {
+    color: #2b91ad;
+}
+
+.scores-area p:last-child {
     color: #21d15c;
-    font-size: 15px;
-    font-weight: bold;
 }
 
-#resultScores {
+#result {
     color: #2116c8;
     font-weight: bold;
+    font-size: 24px;
+    margin: 0 auto;
+    min-height: 30px;
 }
 
-    /* Footer - contact Me*/
- footer a {
+/* Footer - contact Me*/
+footer a {
     font-size: 250%;
-    color:beige
+    color: beige;
 }
 
-@media screen and (min-width: 280px) {
+.reset-button {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #cdecef;
+    font-weight: bolder;
+    cursor: pointer;
+    visibility: hidden;
+}
 
-    body h1 {
-        font-size: 20px;
+@media (max-width: 768px) {
+    h1 {
+        font-size: 5vw;
     }
 
-    main h2 {
-        font-size: 25px;
-        margin: 15px 0;
+    .game-area {
+        width: 95%;
+        padding: 50px 20px;
     }
 
-    .game-arena span {
-        font-size: 45px;
-    }
-
-    .main-div {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .options {
-        position: static;
-        margin-top: 90%;
-        margin-left: -3rem;
-    }
-  
-
-    .options>h2 {
-        display: flex;
-        position: block;
-        font-size: 15px;
-        color: gray;
-        bottom: 0%;
-        left: 25%;
-    }
-
-    .choiceBtn {
-        font-size: 9px;
-        margin: 12px 0px;
-        border-radius: 15%;
-        background-color:#CDECEF;
-
-    }
-
-    .gameScores {
-        font-size: 19px;
-        margin: 18px;
-        margin-top:-40px;
-    }
-
-    .gameScores #result {
-        top: 4rem;
-    }
-
-    #scores-area div {
-        margin-top: -9rem;
+    .game-arena {
+        gap: 5vw;
+        margin: 0;
         padding: 0;
-        font-size: 12px;
-
     }
 
-    #current-game-result {
-        margin-top: -8rem;
+    .default-computer,
+    .default-player,
+    .default-vs {
+        font-size: 20vw;
     }
 
-}
-@media screen and (min-width: 390px) {
-   .options {
-    margin-top:100%;
-    height:65px;
-    justify-content:center;
-    margin-left:12px;
-    margin-top:13rem;
-   } 
-
-   .options h2 {
-    bottom: 12%;
-    left: 35%;
-   }
-
-   .options .choiceBtn {
-    width: 4rem;
-    height:2rem;
-    font-size: 14px;
-   }
-
-   #scores-area div {
-    margin-top: -12rem;
-   }
-
-    #current-game-result {
-    margin-top: -10rem;
+    .default-vs {
+        font-size: 8vw;
     }
 
-
-}
-
-
-
-@media screen and (min-width: 540px) {
-    
-    .options .choiceBtn {
-        margin-top: 2rem;
-        width:70px;
-        height:35px;
-        background-color: #CDECEF;
-        font-weight:bolder;
-        cursor: pointer;
-    }
-    
-    
-    
-    .gameScores {
-    font-size: 19px;
-    margin: 15px;
-    margin-top: -6rem;
+    .scores-area {
+        gap: 10vw;
+        font-size: 7vw;
     }
 
-    #current-game-result {
-        margin-top: -9rem;
-    }
-
-}
-
-
-
-@media screen and (min-width: 768px) {
-
-    /*Heading*/
-    body h1 {
-        font-size:35px;
-    }
-
-
-    main h2 {
-        font-size: 40px;
-    }
-        /*GAME ARENA - HANDS SETTINGS*/
-    .game-arena span {
-        font-size: 85px;
-        padding: 0 2rem;
-    }
-
-
-    /*Scores Computer and Player - location on the page*/
-    #scores-area div {
-        margin-top: 1rem;
-        padding: 0 5rem;
-    }
-
-        /*Computer and Player Scores - font-size*/
-    #scores-area p {
-        font-size:22px;  
-        margin-top: -18rem;
-    }
-    /* TEXT - "Chose your Hand"*/ 
-    .options>h2 {
-        align-items: center;
-        position: absolute;
-        font-size: 15px;
-        bottom: 25%;
-        left: 40%;
-        margin-bottom:-1rem;
-    }
-
-        /* Settings inside Choice Buttons*/
     .options {
-        font-size: 34px;
-        margin:1px 8px;
-        margin-top:13rem;
+        flex-wrap: wrap;
     }
-
-
-    #current-game-result {
-        margin-top: -12rem;
-
-    }
-
-    #current-game-result p {
-        font-size: 27px;
-        
-    }
-
-    .choiceBtn {
-    margin: 3rem 1px;
-    justify-items: center;     
-    border-radius: 15%;
-
-    }
-
 }
-
-@media screen and (min-width: 1024px) {
-
-
-    .game-arena span {
-            font-size: 125x;
-            padding: 0 2rem;
-        }
-
-    #scores-area div {
-        margin-top: -20rem;
-        padding: 0 5rem;
-        }
-            
-        /*Computer and Player Scores - font-size*/
-        #scores-area p {
-            font-size: 25px;
-            margin-top: 5rem;
-
-        }
-            
-        /* TEXT - "Chose your Hand"*/
-    .options>h2 {
-        align-items: center;
-        position: absolute;
-        font-size: 15px;
-        bottom: 36%;
-        left: 30%;
-        margin:0;
-    }
-
-            
-    #current-game-result {
-            margin-top: -17em;   
-    }
-            
-    .choiceBtn {
-        margin: 12rem 5px;
-        justify-items: center;
-        border-radius: 15%;
-        width: 4rem;
-        height: 4rem;
-        background-color:#CDECEF;
-    }
-
-    /*options area*/
-   .options {
-        display: flex;
-        position: relative; 
-        top: 4%;
-        left:5%;
-        justify-content: center;
-        
-   }
-
-  
-}
-
