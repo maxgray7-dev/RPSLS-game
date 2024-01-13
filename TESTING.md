@@ -6,7 +6,7 @@ Test details:
 [GitHub web-address:] (https://maxgray7-dev.github.io/RPSLS-game)
 
 # Project functionality testing
-
+To ensure site functions correctly I checked HTML, CSS, and Javascipt.code.
 
 
 

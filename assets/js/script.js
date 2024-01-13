@@ -11,6 +11,8 @@ const playerChoice = document.getElementsByClassName("p_default");
 const choiceButtons = document.querySelectorAll(".choiceBtn");
 const computerScore = 0;
 const playerScore = 0;
+const playerScoreNumber = document.getElementById("#player-won");
+const computerScoreNumber = document.getElementById("#pc-won");
 
 // Create array for computer's choices
 let computerChoiceOptions = {
@@ -36,18 +38,14 @@ let playerChoiceOptions = {
 
 
 //Player choice;
-choiceButtons.forEach(button => button.addEventListener ("click", () => {
-    player = playerChoiceOptions();
-    return player.innerText;
+choiceButtons.forEach(button => button.addEventListener ("click", function() {
+    const playerChoice =playerChoiceOptions[this.DataTransferItem.icon];
+    const computerChoice= getRandomChoice(computerChoiceOptions);
+    
+
+    result= winnerOfTheGame(playerChoice, computerChoice);
 }))
 
-//Event Listener for each button
-rockButton.addEventListener("click", function () {
-    let icon =player.firstElementChild;
-    icon.classList.remove("fa-hand-fist fa-rotate-270")
-    removeIcons(icon);
-    icon.classList.add("fa-hand-fist fa-rotate-270")
-})
 
 
 
@@ -60,7 +58,7 @@ function computerRandomChoice() {
     return computerNumber;
 }
 
-//Define Winner
+//Determine the Winner
  function winnerOfTheGame( player, computer) {
     if (player === computer) {
         return "Draw!"
@@ -71,19 +69,16 @@ function computerRandomChoice() {
                 (player === "spock" && computer === "scissors" || computer === "rock")) 
     {
         return "Player Won!";
+        
     } else {
         return "Computer Won!";
     }
 }
-
-
-
-
-
-
-
-
-// Event Listeners for buttons that player clicks;
+//Function to update scores
+function updateScores (computerScore, playerScore) {
+        playerScoreNumber.textContent = playerScore;
+        computerScoreNumber.textContent = computerScore;
+    }
 
 
 //Rules Button
