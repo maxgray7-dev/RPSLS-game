@@ -54,7 +54,7 @@ I used Balsamiq wireframes software to build a simple framework that would help 
 
  Below is attached wireframe :
 
-- [Web-page](https://ibb.co/Fnw51yx)
+- ![Web-page](https://ibb.co/Fnw51yx)
 
   
 # Features
@@ -91,7 +91,7 @@ In the current project were used next technologies and apps:
 
 # Testing
 
-Testing was completed. All information regarding test can be found in TESTING.md file - [here](TESTING.md)
+Testing was completed. All information regarding test can be found  - [here](TESTING.md)
 
 # Deployments
 
