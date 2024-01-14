@@ -4,7 +4,7 @@ Developer: Maksim Popov;
 
 [GAME Link](https://maxgray7-dev.github.io/RPSLS-game/)
 
-![Site preview](https://i.ibb.co/8bYR3Xv/am-i-responsive.png")
+![Site preview](https://i.ibb.co/V2Vm0Dk/Am-I-Responsive-14-01-2024.png)
 
 ## Description
 
