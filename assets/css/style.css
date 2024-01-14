@@ -71,7 +71,7 @@ body {
     color: #ffdad8;
     border-color: #2116c8;
     background-color: #2b91ad;
-    border-radius: 15%;
+    border-radius: 10%;
 }
 
 /*  SETTINGS FOR HANDS */
@@ -93,6 +93,8 @@ h2 {
     padding: 50px 30px;
     margin-bottom: 20px;
     position: relative;
+    border-radius: 5%;
+    border:2px solid #f2f7f9;
 }
 
 .game-arena {
