@@ -92,6 +92,9 @@ and than I replaced with brackets  :
 
 Nevertheless, I believe this challenge showed me that I must to practice a lot. I wish I had more time for this project as I would like to add more animation elements and additional perks to this page. 
 
+4. I had the issue wi a score table, so game could't be finished. The reason was that in script.js  I missed "!" when compared results between functions. Therefore computer tried to find the string "computer wins" or "player wins" , where is in the code was used "computer wins!" and "player wins!" After adding "!" this issue was fixed.
+
+
 ## Browsers were tested
 
 - Google Chrome: Version 119.0.6045.200 (Official Build) (64-bit)
