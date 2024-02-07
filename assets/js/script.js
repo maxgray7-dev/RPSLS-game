@@ -56,10 +56,10 @@ choiceButtons.forEach((button) =>
         
 
         //Add a score to the winner result
-        if (roundResult === 'Computer Wins') {
+        if (roundResult === 'Computer Wins!') {
             computerScore++;
             computerScoreEl.innerHTML = computerScore;
-        } else if (roundResult === 'Player Wins') {
+        } else if (roundResult === 'Player Wins!') {
             playerScore++;
             playerScoreEl.innerHTML = playerScore;
         }
